@@ -6,12 +6,15 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "npx nodemon src/index.js"
   },
   "dependencies": {
     "express": "^4.15.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
   "keywords": [
     "node",
     "heroku",
