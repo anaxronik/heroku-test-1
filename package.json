@@ -2,9 +2,12 @@
   "name": "nest-project",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Sergey Komarov",
   "private": true,
   "license": "UNLICENSED",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
