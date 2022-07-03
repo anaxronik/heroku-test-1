@@ -20,6 +20,15 @@ async function init() {
       const users = await User.findAll();
       return res.send(users);
     })
+    .get("/users/:id", async (req: Request, res: Response) => {
+      const id = req.params.id;
+      const user = await User.findOne({ where: { id } });
+      if (user) {
+        return res.send(user);
+      } else {
+        res.status(404).send("Not found");
+      }
+    })
     .post("/users", async (req: Request, res: Response) => {
       const userName = req?.body?.userName || "unknown";
 
