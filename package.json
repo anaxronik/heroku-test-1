@@ -4,11 +4,13 @@
   "engines": {
     "node": "16.x"
   },
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node dist/index.js",
     "dev": "npx nodemon",
-    "ts": "ts-node src/index.ts"
+    "ts": "ts-node src/index.ts",
+    "tsc": "tsc",
+    "build": "npm run tsc"
   },
   "dependencies": {
     "express": "^4.15.2",
